@@ -1,0 +1,51 @@
+# Uses Python 3.10.10
+
+# Base libraries
+matplotlib==3.6.2
+numpy==1.23.2
+scikit-learn==1.2.0
+pandas
+scipy
+seaborn
+tqdm==4.64.0
+
+python-dotenv==1.0.0
+
+# Pretty logs
+rich==13.4.1
+
+# Code style and type-checking
+black==22.3.0
+flake8==4.0.1
+isort==5.12.0
+pytest==7.1.2
+pylint==2.13
+mypy==1.2
+pre-commit==3.2.2 # Run `pre-commit install` to set-up pre-commit hooks
+
+# Cooper -- Constrained optimization -- Installing from unstable 1.0.0-alpha
+# Latest update: Sep 17; Added PI optimizer to 1.0.0-alpha
+git+https://github.com/cooper-org/cooper.git@1333d8ba59313928114393e3fefe01df617e551a
+
+# Pytorch
+--extra-index-url https://download.pytorch.org/whl/cu118
+torch==2.0.0
+
+--extra-index-url https://download.pytorch.org/whl/cu118
+torchvision==0.15.0
+
+--extra-index-url https://download.pytorch.org/whl/cu118
+torchaudio==2.0.0
+
+# Experiment tracking and reproducibility
+ml-collections==0.1.1
+wandb==0.15.4
+
+# Dimensionality reduction
+umap-learn==0.5.3
+
+# Submitting SLURM jobs
+submitit==1.4.5
+
+# Adversarial robustness
+foolbox==3.3.3
